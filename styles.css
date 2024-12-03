@@ -1,13 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(5, 50px);
+    grid-template-columns: repeat(6, 100px);
     grid-gap: 10px;
-    justify-content: center;
+    justify-content: left;
 }
 
 .grid img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     object-fit: cover; /* Ensures the image fits neatly into the square */
     border-radius: 5px; /* Optional: Rounded corners */
     cursor: pointer;
@@ -16,4 +20,17 @@
 
 .grid img:hover {
     transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.profile {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: left;    /* Center align the content */
+    text-align: left;     /* Center the text */
+    gap: 10px;              /* Add space between the image and text */
+}
+
+.profile-photo {
+    width: 500px; /* Adjust image size if needed */
+    height: auto;
 }
